@@ -1,76 +1,195 @@
 :root {
-  --primary: #c271ff;
-  --font-family-base: "Source Sans Pro", sans-serif;
-}
-/* Navbar */
-
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-  background-color: transparent;
-  padding: 20px 300px;
-  font-family: var(--font-family-base);
-}
-
-.smile-face {
-  width: 36px;
-}
-
-.logo-text {
-  width: 114px;
-}
-
-.btn-primary {
-  background-color: var(--primary);
-  font-family: var(--font-family-base);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary);
-  opacity: 0.9;
-}
-
-/* header */
-
-.header-section {
-  background-image: url(images/pic_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-position: center center; */
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-}
-
-.container {
-  margin-top: 8rem;
-}
-.subtitle {
-  margin-top: 10rem;
-  font-size: 32px;
-  font-weight: 300px;
-  font-family: var(--font-family-base);
-}
-
-.learn {
-  color: var(--primary);
-  font-family: var(--font-family-base);
-}
-
-/* Cards */
-
-.card-deck {
-  margin-top: 5.5rem;
-}
-
-.card {
-  border-color: transparent;
-  background-color: transparent;
-}
-
-.card-img-top {
-  width: 12rem;
-}
+    --primary: #c271ff;
+    --font-family-base: "Source Sans Pro", sans-serif;
+  }
+  /* Navbar */
+  
+  .navbar {
+    border-bottom: none;
+    background-color: transparent;
+    font-family: var(--font-family-base);
+  }
+  
+  .navbar-dark .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+  }
+  
+  .smile-face {
+    width: 36px;
+  }
+  
+  .logo-text {
+    width: 114px;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    font-family: var(--font-family-base);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary);
+    opacity: 0.9;
+  }
+  
+  /* header */
+  
+  .header-section {
+    background-image: url(images/pic_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+  }
+  header#pricing-page,
+  header#courses-page {
+    background-image: url(images/pic_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header#pricing-page h1 {
+    letter-spacing: 0.1rem;
+  }
+  
+  header#pricing-page svg {
+    fill: #82d24f;
+  }
+  
+  header#pricing-page .logo-words-pricing {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 5px;
+  }
+  
+  .logo-smile {
+    width: auto;
+    height: 30px;
+  }
+  .logo-words {
+    width: auto;
+    height: 30px;
+  }
+  
+  .container {
+    margin-top: 8rem;
+  }
+  .subtitle {
+    margin-top: 10rem;
+    font-size: 32px;
+    font-weight: 300px;
+    font-family: var(--font-family-base);
+  }
+  
+  .learn {
+    color: var(--primary);
+    font-family: var(--font-family-base);
+  }
+  
+  /* Cards */
+  
+  .card-deck {
+    margin-top: 5.5rem;
+  }
+  
+  .card {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .card-img-top {
+    width: 12rem;
+  }
+  
+  /* Carrousel */
+  .testimonials {
+    background-color: #c271ff;
+  }
+  
+  #testimonial-carousel .carousel-item {
+    width: 100%;
+    height: 300px;
+    background-color: #c271ff;
+  }
+  
+  #testimonial-carousel .carousel-item img {
+    width: 20%;
+    margin-left: 15%;
+  }
+  
+  #testimonial-carousel .carousel-item .testimonial-text {
+    margin-left: 2rem;
+    width: 50%;
+  }
+  
+  /* videos */
+  .video {
+    position: relative;
+  }
+  
+  .play-btn {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    top: 36%;
+  }
+  .tutorial-author img {
+    width: 15%;
+  }
+  
+  .tutorial-author span,
+  .tutorial-info span {
+    color: #c271ff;
+  }
+  
+  /* background-color section */
+  .bg-color-section {
+    background-color: #071629;
+  }
+  
+  /* Footer */
+  .social {
+    fill: white;
+  }
+  
+  /* Form */
+  
+  .font-coiny {
+    font-family: "Coiny";
+  }
+  .bg-purple {
+    background-color: #c271ff;
+  }
+  #keywords {
+    border-left: none;
+  }
+  #search-filters svg {
+    fill: white;
+  }
+  input,
+  .input-group,
+  .input-group-text,
+  select {
+    border-radius: 0 !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-color: white !important;
+    background-color: rgb(255, 255, 255, 0.2) !important;
+    color: #efefef !important;
+  }
+  .input-group-text {
+    position: relative;
+    right: 1px;
+  }
+  input::placeholder {
+    color: #efefef !important;
+  }
+  
